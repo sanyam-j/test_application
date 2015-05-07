@@ -50,5 +50,10 @@ group :development, :test do
   gem 'spring'
 end
 
+group :production do
+  gem 'pg'
+end
+
+
 ruby "2.1.5"
 
