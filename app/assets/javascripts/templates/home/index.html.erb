@@ -1,7 +1,11 @@
 <style type="text/css">
 
   .ta-toolbar{
-    display: none;
+    /*display: none;*/
+    /*position: absolute;
+    z-index: 100000;
+    top: -70px;
+    width: 1000px;*/
   }
   .ta-toolbar.focussed{
     display: block;
@@ -12,12 +16,21 @@
 
 
 <br><br><br>
-<div text-angular ng-model="htmlVariable2"></div>
+<div style="height:550px;width:500px;margin:auto;background-color:red;">
+  <div text-angular ng-model="htmlVariable2"></div>
+</div>
 <br>
 {{htmlVariable2}} -->
+<br><br><br>
+
+<div text-angular-toolbar class="toolbar" name="toolbar" ta-toolbar="[['h1', 'h2', 'p', 'pre', 'quote', 'bold', 'italics', 'underline', 'ul', 'ol', 'justifyLeft', 'justifyCenter', 'justifyRight', 'indent', 'outdent', 'insertImage']]"></div>
+
+<!-- <div style="overflow: auto; width: 100%; height: 100%; max-width: 700px; max-height: 750px; background-color: #FFFFFF;">
+    <div text-angular ta-target-toolbars="toolbar" ng-model="htmlContent"></div>
+</div> -->
 
 <div class = "">
-  <div class = "dnd-container" style="height:550px;width:500px;margin:auto;background-color:red;" >
+  <div class = "dnd-container" style="height:550px;width:500px;top:200px;margin:auto;background-color:red;" >
 
     <div class = "draggable handle" style = "position: absolute;background-color:yellow;"
          ng-style = "{'line-height': main.rect.height}"
@@ -46,9 +59,12 @@
          dnd-fittext = "{width:main.rect.width, height:main.rect.height}"
          dnd-model = "main.dragmodel">
 
-        <div>
+         <!-- <div style="overflow: auto; width: 100%; height: 100%; max-width: 700px; max-height: 750px; background-color: #FFFFFF;"> -->
+            <div text-angular ta-target-toolbars="toolbar" ng-model="htmlContent"></div>
+         <!-- </div> -->
+        <!-- <div>
           <div text-angular ng-model="htmlVariable2"></div>
-        </div>
+        </div> -->
 
     </div>
 
