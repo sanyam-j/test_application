@@ -1,0 +1,56 @@
+<style type="text/css">
+
+  .ta-toolbar{
+    display: none;
+  }
+  .ta-toolbar.focussed{
+    display: block;
+  }
+</style>
+
+<!-- <div text-angular ng-model="htmlVariable" ta-toolbar-class="btn-toolbar" ta-toolbar-group-class="btn-group" ta-toolbar-button-class="btn btn-default" ta-toolbar-button-active-class="active"></div>
+
+
+<br><br><br>
+<div text-angular ng-model="htmlVariable2"></div>
+<br>
+{{htmlVariable2}} -->
+
+<div class = "">
+  <div class = "dnd-container" style="height:550px;width:500px;margin:auto;background-color:red;" >
+
+    <div class = "draggable handle" style = "position: absolute;background-color:yellow;"
+         ng-style = "{'line-height': main.rect.height}"
+         ng-click = "click(!$dragged && !$resized && !$rotated, $dropmodel)"
+
+         dnd-draggable = "true"
+         dnd-draggable-opts = "{layer: 'layer1', useAsPoint: true }"
+         dnd-on-dragstart = "main.dragstart($dropmodel, $dragmodel)"
+         dnd-on-drag = "main.drag($dropmodel, $dragmodel)"
+         dnd-on-dragend = "main.dragend($dropmodel, $dragmodel)"
+
+         dnd-rotatable = "true"
+         dnd-on-rotatestart = "main.dragstart()"
+         dnd-on-rotate = "main.drag()"
+         dnd-on-rotateend = "main.dragend()"
+
+         dnd-resizable = "true"
+         dnd-on-resizestart = "main.dragstart()"
+         dnd-on-resize = "main.drag()"
+         dnd-on-resizeend = "main.dragend()"
+         dnd-resizable-opts = "{ handles: 'n, e, s, w'}"
+
+         dnd-containment = "'.dnd-container'"
+
+         dnd-rect = "main.rect"
+         dnd-fittext = "{width:main.rect.width, height:main.rect.height}"
+         dnd-model = "main.dragmodel">
+
+        <div>
+          <div text-angular ng-model="htmlVariable2"></div>
+        </div>
+
+    </div>
+
+  </div>
+</div>
