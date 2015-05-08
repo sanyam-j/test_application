@@ -3,3 +3,9 @@
     background: #ffffdd;
     position: relative;
 }
+
+.ta-editor, .white-box {
+  padding: 7px !important;
+  /* background-color: #FFF; */
+  border: 1px solid #EEE;
+}
