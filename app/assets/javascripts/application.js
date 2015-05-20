@@ -10,13 +10,19 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+// require jquery/dist/jquery
+// require jquery_ujs
+// require angular-bootstrap
 //= require angular
 //= require angular-route
 //= require angular-resource
 //= require angular-rails-templates
-//= require textAngular/dist/textAngular-rangy.min
-//= require textAngular/dist/textAngular-sanitize.min
-//= require textAngular/dist/textAngular.min
-//= require angular-dnd/dist/angular-dnd
+// require textAngular/dist/textAngular-rangy.min
+// require textAngular/dist/textAngular-sanitize.min
+// require textAngular/dist/textAngular.min
+// require angular-dnd/dist/angular-dnd
+// require bootstrap
+//= require summernote
+//= require angular-summernote
 //= require angular-app/test
 //= require_tree .

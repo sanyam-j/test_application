@@ -10,6 +10,8 @@
 //Controllers
 test.controller("HomeController", ['$scope', function($scope){
 
+  $scope.text_1 = "skjlndkj;kjdbnkj ksdnk;s km.j.j"
+
 }]);
 
 //Routes

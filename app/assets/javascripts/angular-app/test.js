@@ -1,1 +1,1 @@
-var test = angular.module('test', ['ngRoute', 'ngResource', 'templates', 'textAngular', 'dnd']);
+var test = angular.module('test', ['ngRoute', 'ngResource', 'templates', 'summernote']);

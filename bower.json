@@ -7,8 +7,12 @@
       "angular": "latest",
       "angular-route": "latest",
       "angular-resource": "latest",
-      "textAngular": "latest",
-      "angular-dnd": "git@github.com:Tuch/angular-dnd.git"
+      "angular-bootstrap": "0.12.1",
+      // "textAngular": "latest",,
+      "angular-dnd": "git@github.com:Tuch/angular-dnd.git",
+      "font-awesome": "4.3.0",
+      "summernote": "0.6.7",
+      "angular-summernote": "0.3.2"
     }
   },
   "vendor": {
