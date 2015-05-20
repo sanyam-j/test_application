@@ -11,10 +11,10 @@
  * file per style scope.
  *
  * require textAngular
- * require bootstrap
- * require font-awesome
- *= require summernote
+ *= require bootstrap
+ *= require font-awesome
+ *= require summernote/dist/summernote
  * require bootstrap-css-only
- * require angular-dnd/css/stylesheet
- * require test.css
+ *= require angular-dnd/css/stylesheet
+ *= require test.css
  */
